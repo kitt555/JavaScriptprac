@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js prac ankit</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <script>
+        let country=[
+            {
+                name: "India",
+                capital: "Delhi",
+                population: 2500
+            },
+            {
+                name: "China",
+                capital: "Beijing",
+                population: 3000
+            },
+            {
+                name: "Japan",
+                capital: "Tokyo",
+                population: 1850
+            },
+            {
+                name: "Bangladesh",
+                capital: "Dhaka",
+                population: 1500
+            }
+
+        ];
+
+        for(let i=0;i<=3;i++)
+        {
+            if(country[i].population<2000)
+            {
+                console.log("Country name: "+country[i].name);
+                console.log("Country capital: "+country[i].capital);
+                console.log("Country population: "+country[i].population);
+            }        
+        }       
+    </script>
+</body>
+</html>
