@@ -1,4 +1,4 @@
-# JavaScriptprac
+# JavaScript assignment LetsUpgrade
 Let's Upgrade Day 3 Free JavaScript Programming Essentials Bootcamp assignment
 
 1. Write a program to print a array of five names in reverses order.
