@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manupulation</title>
+    <style>
+        .contain{
+            background-color: aqua;
+            height: 500px;
+            width: 500px;
+        }
+        #but{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain"></div>
+    <div class="contain2"></div>
+    <br>
+    <button onclick="changec()" id="but">Click here to change the colour</button>
+    <button onclick="changes()" id="but">Click here to change the size</button>
+    <br>
+    <br>
+    <button onclick="changea()" id="but">Click here to add an image</button>
+    <button onclick="changer()" id="but">Click here to remove the image</button>
+    <script>
+        function changec()
+        {
+            document.querySelector(".contain").style.backgroundColor="blue";
+        }
+        function changes()
+        {
+            document.querySelector(".contain").style.width="600px";
+        }
+        function changea()
+        {
+            document.querySelector(".contain").innerHTML="<img src='http://code-institute-org.github.io/Full-Stack-Web-Developer-Stream-0/assets/javascript.png'>"
+        }
+        function changer()
+        {
+            document.querySelector(".contain").innerHTML="<img src=''>"
+        }
+    </script>
+</body>
+</html>
